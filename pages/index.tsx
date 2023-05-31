@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Taufiq Mahdi's Portfolio</title>
+        <title>Taufiq Mahdi Portfolio</title>
         <meta name="description" content="Muhammad Taufiq Mahdi's Portfolio Page" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
