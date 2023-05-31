@@ -7,12 +7,14 @@ const Portfolio = (props: Props) => {
 
   return (
     <div className="grid grid-cols-3 gap-6">
-      <div
+      <a
         onMouseEnter={() => setOnPortfolioHover(true)}
         onMouseLeave={() => setOnPortfolioHover(false)}
         className={`${
           onPortfolioHover ? "scale-105" : ""
         } border-2 border-black rounded-lg hover:cursor-pointer overflow-hidden hover:shadow-2xl duration-300`}
+        href="https://taufiqmahdi.github.io/money-manager/"
+        target="_blank"
       >
         <div className="max-h-[200px] h-[200px] w-full">
           <img
@@ -35,7 +37,7 @@ const Portfolio = (props: Props) => {
             {/* <div className="p-1 px-2 border-2 border-black rounded-md text-sm font-semibold capitalize"></div> */}
           </div>
         </div>
-      </div>
+      </a>
     </div>
   );
 };
