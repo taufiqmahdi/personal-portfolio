@@ -3,25 +3,29 @@ import React from "react";
 type Props = {};
 
 const ContactForm = (props: Props) => {
+  const getform_api = process.env.GETFORM_API
+    
   return (
     <div className="flex flex-col gap-4 w-7/12">
       <h3 className="text-4xl font-bold">Contact</h3>
-      <form className="w-full">
+      <form className="w-full" action={`https://getform.io/f/${getform_api}`} method="POST">
         <div className="flex flex-col gap-2 w-full">
           <input
             type="text"
+            name="name"
             placeholder="Name"
             className="p-2 rounded-lg focus:outline-none"
           />
           <input
-            type="text"
+            type="email"
+            name="email"
             placeholder="Email"
             className="p-2 rounded-lg focus:outline-none"
           />
           <textarea
             placeholder="Message"
-            name="adasd"
-            id="asda"
+            name="message"
+            id="message"
             rows={10}
             className="p-2 rounded-lg focus:outline-none"
           ></textarea>
