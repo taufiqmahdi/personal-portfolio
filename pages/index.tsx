@@ -22,10 +22,10 @@ export default function Home() {
       <main
         className={`${nunito.className} bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-gray-200 via-gray-400 to-gray-600`}
       >
-        <div className="max-w-5xl w-11/12 mx-auto flex flex-col gap-16 items-center min-h-screen">
+        <div className="max-w-5xl w-full mx-auto flex flex-col gap-0 md:gap-16 items-center min-h-screen">
           {/* <Navbar /> */}
           <Description />
-          <Portfolio />
+          {/* <Portfolio /> */}
           <Timeline />
           <ContactForm />
           <Footer />

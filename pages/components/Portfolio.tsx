@@ -6,7 +6,7 @@ const Portfolio = (props: Props) => {
   const [onPortfolioHover, setOnPortfolioHover] = useState(false);
 
   return (
-    <div className="grid grid-cols-3 gap-6">
+    <div className="grid grid-cols-1 gap-6">
       <a
         onMouseEnter={() => setOnPortfolioHover(true)}
         onMouseLeave={() => setOnPortfolioHover(false)}
@@ -34,7 +34,6 @@ const Portfolio = (props: Props) => {
             <div className="p-1 px-2 border-2 border-black rounded-md text-sm font-semibold capitalize">
               Chakra UI
             </div>
-            {/* <div className="p-1 px-2 border-2 border-black rounded-md text-sm font-semibold capitalize"></div> */}
           </div>
         </div>
       </a>

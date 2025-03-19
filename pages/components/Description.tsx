@@ -2,13 +2,13 @@ type Props = {};
 
 const Description = (props: Props) => {
   return (
-    <div className="mt-10 flex flex-col gap-4 items-center">
-      <h1 className="text-6xl font-semibold capitalize flex">
-        Muhammad&nbsp;
-        <span className="hover:cursor-default relative font-extrabold text-slate-700 z-0 before:bg-slate-500 before:absolute before:left-0 before:bottom-0 before:w-[100%] before:-z-[1] before:h-[6px] before:ease-in-out before:transition-all before:duration-300 hover:before:bottom-0 hover:before:h-full">
+    <div className="mt-10 flex flex-col gap-4 items-center p-8 sm:p-0">
+      <h1 className="text-6xl font-semibold capitalize flex flex-col items-center sm:flex-row gap-4">
+        Muhammad
+        <span className="hover:cursor-default relative font-extrabold text-slate-700 z-0 before:bg-slate-500 before:absolute before:left-0 before:bottom-0 before:w-auto before:sm:w-[100%] before:-z-[1] before:h-[6px] before:ease-in-out before:transition-all before:duration-300 hover:before:bottom-0 hover:before:h-full">
           Taufiq
         </span>
-        &nbsp;Mahdi
+        Mahdi
       </h1>
       <h2 className="text-xl font-semibold capitalize">Web Developer</h2>
       <p className="max-w-xl font-bold text-center">
